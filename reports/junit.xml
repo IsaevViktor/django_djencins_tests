@@ -1,0 +1,9 @@
+<testsuite errors="1" failures="0" name="Django Project Tests" skips="0" tests="2" time="1.333"><testcase classname="TestApp.tests.e2e.test_auth.AuthentificationTestCase" name="test_auth" time="0.288417" /><testcase classname="TestApp.tests.e2e.test_auth.AuthentificationTestCase" name="test_registration" time="1.019221"><error message="User matching query does not exist." type="TestApp.models.DoesNotExist">Traceback (most recent call last):
+  File "E:\Users\Atstec\PycharmProjects\testProject\TestApp\tests\e2e\test_auth.py", line 19, in test_registration
+    result = User.objects.get(name=userName)
+  File "C:\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+TestApp.models.DoesNotExist: User matching query does not exist.
+</error></testcase></testsuite>
